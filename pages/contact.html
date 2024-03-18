@@ -19,7 +19,7 @@
     <header>
       <div class="container-fluid">
         <div class="navbar-logo">
-          <a href="../index.html"><img src="../images/logo.png" alt="LABADI" /></a>
+          <a href="../index.html"><img src="../images/logo.webp" alt="LABADI" /></a>
         </div>
 
         <div class="navbar-items d-none d-lg-flex column-gap-3">
@@ -48,7 +48,7 @@
         <!-- Button trigger modal -->
         <div class="mobile-toggler d-lg-none">
           <a href="#" data-bs-toggle="modal" data-bs-target="#navbarModal">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars text-brand"></i>
           </a>
         </div>
         <!-- //Button trigger modal -->
@@ -63,7 +63,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header navbar-logo">
-                <img src="../images/logo.png" alt="Logo" />
+                <img src="../images/logo.webp" alt="Logo" />
                 <button
                   type="button"
                   class="btn-close"
@@ -118,14 +118,17 @@
     </header>
     <!--//HEADER-->
     <!--SECTION-1-->
-    <section class="main-bg p-5">
-      <div class="text-center text-white pb-2">
-        <div class="p-1">
-          <h2 class="bg-base d-inline display-3 fw-bold pb-1 px-5" data-aos="fade-up">
-            Contact <span class="text-brand">Us</span>
+    <video autoplay muted loop id="main-bg">
+      <source src="../images/Video_bg.webm" type="video/mp4">
+    </video>
+    <section class="margin">
+      <div class="text-center text-white">
+        <div class="py-2">
+          <h2 class="bg-base d-inline-flex display-3 fw-bold px-4" data-aos="fade-up">
+           <span> Contact <span class="text-brand">Us</span></span>
           </h2>
         </div>
-        <p class="mt-5 fs-7 wp-size position-relative start-50 translate-middle" data-aos="fade-up" data-aos-delay="600">
+        <p class="wp-size fs-7" data-aos="fade-up" data-aos-delay="600">
           We are a team of passionate exparts in thermal imaging technology,
           dedicated to providing innovative and reliable solutions for a wide
           range of industries. With years of experience in the field, we have
@@ -142,83 +145,90 @@
     </section>
     <!--//SECTION-1-->
     <!--SECTION-2-->
-    <div class="container">
-      <div class="row py-4">
-        <div class="col-lg-8 d-grid gap-1">
-          <div class="pb-1">
-          <p class="fs-2 d-inline border-color-brand pb-1">Opening Hours</p>
+    <div class="container" style="margin-top: 310px;">
+      <div class="row py-5">
+        <div class="col-lg-8">
+          <div class="d-grid row-gap-3 pb-5 img-fluid py-4" style="width: 500px;">
+            <div class="text-center">
+            <h4 class="fs-2 d-inline border-color-brand pb-1">Ask Us A Question</h4>
+          </div>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone">
+              </div>
+            </div>
+              <textarea class="form-control" placeholder="Question?"></textarea>
+            <div class="text-center">
+            <a href="" class="text-black btn btn-outline-primary rounded-pill shadow-1 px-4">Ask Away</a>
+          </div>
+          </div>
         </div>
-          <span>Monday: 9:00am - 5:00pm</span>
-          <span>Tuesday: 9:00am - 5:00pm</span>
-          <span>Wednesday: 9:00am - 5:00pm</span>
-          <span>Thursday: 9:00am - 5:00pm</span>
-          <span>Friday: 9:00am - 5:00pm</span>
-          <span>Saturday: Closed</span>
-          <span>Sunday: Closed</span>
-        </div>
-        
         <div class="col-lg-4">
-          <div class="pb-1">
-          <p class="fs-2 d-inline border-color-brand pb-1">Contacts</p>
-        </div>
-        <div class="d-grid">
-          <span>Sales: 0434 083 031</span>
-          <span>Shoping: 0434 083 031</span>
-          <span>Accounts: 0434 083 031</span>
-        </div>
+          <div class="d-grid gap-1 pb-2">
+            <div class="pb-1">
+            <p class="fs-2 d-inline border-color-brand pb-1">Opening Hours</p>
+          </div>
+            <span>Monday: 9:00am - 5:00pm</span>
+            <span>Tuesday: 9:00am - 5:00pm</span>
+            <span>Wednesday: 9:00am - 5:00pm</span>
+            <span>Thursday: 9:00am - 5:00pm</span>
+            <span>Friday: 9:00am - 5:00pm</span>
+            <span>Saturday: Closed</span>
+            <span>Sunday: Closed</span>
+          </div>
+          <div class="">
+            <div class="pb-1">
+            <p class="fs-2 d-inline border-color-brand pb-1">Contacts</p>
+          </div>
+          <div class="d-grid">
+            <span>Sales: 0434 083 031</span>
+            <span>Shoping: 0434 083 031</span>
+            <span>Accounts: 0434 083 031</span>
+          </div>
+          </div>
         </div>
       </div>
     </div>
     <!--//SECTION-2-->
-    <!--SECTION-3-->
-    <div class="container d-grid row-gap-3 pb-5 img-fluid" style="width: 500px;">
-      <h4 class="text-center">Ask Us A Question</h4>
-      <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone">
-        </div>
-      </div>
-        <textarea class="form-control" placeholder="Question?"></textarea>
-      <div class="text-center">
-      <a href="" class="text-black btn btn-outline-primary rounded-pill shadow-1 px-4">Ask Away</a>
-    </div>
-    </div>
-    <!--//SECTION-3-->
 <!--FOOTER-->
 <footer class="footer bg-black text-white py-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <ul class="align-self-center lh-lg text-center">
-          <img src="../images/logo_2.png" width="200" class="pt-5" alt="">
-    <div class="d-flex column-gap-3 p-3">
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-facebook fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-twitter fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-tiktok fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-instagram fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-youtube fs-4"></i
-      ></a>
-    </div>
+        <ul class="row align-self-center lh-lg text-center">
+          <div>
+          <img src="../images/logo_2.webp" width="200" class="pt-5 img-fluid" alt="">
+        </div>
+        <div>
+          <div class="pt-3">
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-facebook fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-twitter fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-tiktok fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-instagram fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-youtube fs-4"></i
+            ></a>
+          </div>
+        </div>
         </ul>
       </div>
       <div class="col-6 col-lg-3">
@@ -270,23 +280,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-    <script>
-      $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+    <script src="../assets/js/main.js">
     </script>
     <script>
       AOS.init();

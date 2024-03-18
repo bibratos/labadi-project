@@ -7,15 +7,15 @@
     center: true,
     nav: true,
     responsiveClass: true,
-    // navText: [
-
-    // ],
+    items: 1,
+    dots:false,
+    navText : ['<img src="./images/angle-left.png" width="10"><img src="./images/angle-left.png" width="10">','<img src="./images/angle-right.png" width="10"><img src="./images/angle-right.png" width="10">'],
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
       },
       1000: {
         items: 3,

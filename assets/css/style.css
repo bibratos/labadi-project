@@ -9,13 +9,31 @@
     --font-base: "Inter";
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--color-body);
+    font-family: var(--font-base);
+}
+
 .fs-7 {
-    font-size: .9rem;
-    color: #c3c3c3;
+    font-size: 0.9rem;
+    color: #C0C0C0;
 }
 
 .wp-size {
-    width: 55%;
+    /* width: 50%; */
+    padding: 1% 25% 1% 25%;
+}
+
+@media(max-width:880px) {
+    .wp-size {
+        padding: 0 10% 0 10%;
+    }
 }
 
 .default-font {
@@ -23,6 +41,7 @@
 }
 
 .divider {
+    width: 100%;
     box-shadow: 4px 1px 8px var(--color-base2);
 }
 
@@ -42,7 +61,17 @@
     background-color: var(--color-base);
 }
 
+.table-gray {
+    background-color: #DEDEDE;
+}
+
+.spacing-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
 .video-container {
+
     width: 100%;
     height: 450px;
 }
@@ -52,40 +81,97 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 700px;
+    width: 80%;
     height: 400px;
     background: #787878;
 }
 
-body {
-    background-color: var(--color-body);
-    font-family: var(--font-base);
+@media(max-width:480px) {
+    .video-container {
+        height: 250px;
+    }
+
+    .video {
+        height: 200px;
+    }
+}
+
+.margin {
+    margin-top: -600px;
+}
+
+@media(max-width:410px) {
+    .margin {
+        margin-top: -650px;
+    }
 }
 
 .bg-brand {
+
     background-color: var(--color-brand);
 }
 
 .text-brand {
+
     color: var(--color-brand);
 }
 
 .main-bg {
-    background-image: url(../../images/bg.png);
+    background: url(../../images/bg.png);
     width: 100%;
     background-attachment: fixed;
     background-position-x: center;
     background-size: 100vw;
 }
 
-.negative-margin {
-    margin-top: -5rem;
+#main-bg {
+
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(max-width:1399px) {
+    #main-bg {
+        height: 670px;
+    }
+}
+
+@media(min-width:1400px) {
+    #main-bg {
+        height: 750px;
+    }
+}
+
+.position-absolute {
+
+    /* position: relative; */
+    top: 280px;
+}
+
+@media(max-width:1399px) {
+    .position-absolute {
+        /* position: relative; */
+        top: 190px;
+    }
+}
+
+@media(max-width:350px) {
+    .position-absolute {
+        /* position: relative; */
+        top: 110px;
+    }
 }
 
 a {
     text-decoration: none;
+
 }
 
 header {
@@ -97,6 +183,7 @@ header {
 }
 
 header .container-fluid {
+
     width: 100%;
     padding: 0 64px;
     display: flex;
@@ -124,19 +211,21 @@ header .navbar-items {
 }
 
 header .item {
+
     text-align: center;
     font-size: 12px;
     font-weight: bold;
     transition: all .1s ease;
-    /* border: none; */
     cursor: pointer;
 }
 
-.active-nav, header .item:hover {
+.active-nav,
+header .item:hover {
     border-bottom: 2px solid var(--color-brand);
 }
 
 header .item a {
+
     text-decoration: none;
     color: var(--color-base2);
 }
@@ -149,15 +238,12 @@ header .mobile-toggler {
 /* modal */
 
 .modal-dialog {
-
     margin: 0;
     width: 430px;
 }
 
 @media(max-width: 450px) {
-
     .modal-dialog {
-
         width: 82%;
     }
 }
@@ -182,20 +268,17 @@ header .mobile-toggler {
 }
 
 .modal-header img {
-
     width: 140px;
     height: 66px;
     margin-top: 17.5px;
 }
 
 .modal-header .btn-close {
-
     background: transparent;
     opacity: 1;
 }
 
 .modal-header i {
-
     color: #fefefe;
     font-size: 30px;
 }
@@ -223,6 +306,7 @@ header .mobile-toggler {
 }
 
 .modal-body .modal-line:hover {
+
     color: #fefefe;
     border-bottom: 1px solid #fefefe;
 }
@@ -236,7 +320,6 @@ header .mobile-toggler {
 }
 
 .modal-line i {
-
     color: currentColor;
     font-size: 30px;
     width: 35px;
@@ -245,6 +328,7 @@ header .mobile-toggler {
 }
 
 .navbar-button {
+
     text-decoration: none;
     width: 100%;
     height: 47px;
@@ -283,6 +367,7 @@ header .mobile-toggler {
 
 .section-shadow {
     border-bottom: 1px solid var(--color-brand);
+    border-radius: 3px;
 }
 
 .border-color-brand {
@@ -292,16 +377,24 @@ header .mobile-toggler {
 
 
 /*Owl*/
+.form-control {
+    background-color: #c2c2c2;
+}
 
 .owl-carousel .item {
+
     opacity: 0.8;
-    transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8, 0.8, 1);
     transition: all 0.3s ease-in-out;
 }
 
 .owl-carousel .owl-item.active.center .item {
     opacity: 1;
-    transform: scale3d(1,1,1);
+    transform: scale3d(1, 1, 1);
+}
+
+.owl-nav {
+    display: block !important;
 }
 
 .owl-nav .owl-next {

@@ -19,7 +19,7 @@
     <header>
       <div class="container-fluid">
         <div class="navbar-logo">
-          <a href="../index.html"><img src="../images/logo.png" alt="LABADI" /></a>
+          <a href="../index.html"><img src="../images/logo.webp" alt="LABADI" /></a>
         </div>
 
         <div class="navbar-items d-none d-lg-flex column-gap-3">
@@ -48,7 +48,7 @@
         <!-- Button trigger modal -->
         <div class="mobile-toggler d-lg-none">
           <a href="#" data-bs-toggle="modal" data-bs-target="#navbarModal">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars text-brand"></i>
           </a>
         </div>
         <!-- //Button trigger modal -->
@@ -63,7 +63,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header navbar-logo">
-                <img src="../images/logo.png" alt="Logo" />
+                <img src="../images/logo.webp" alt="Logo" />
                 <button
                   type="button"
                   class="btn-close"
@@ -118,17 +118,20 @@
     </header>
     <!--//HEADER-->
     <!--SECTION-1-->
-    <section class="main-bg p-5">
-      <div class="text-center text-white pb-5">
-        <div class="p-3">
-          <h2 class="bg-base d-inline display-3 fw-bold pb-2 px-5" data-aos="fade-up">
+    <video autoplay muted loop id="main-bg">
+      <source src="../images/Video_bg.webm" type="video/mp4">
+    </video>
+    <section class="margin">
+      <div class="text-center text-white">
+        <div class="py-2">
+          <h2 class="bg-base d-inline-flex display-3 fw-bold px-4" data-aos="fade-up">
             No Issue Will Go
           </h2>
         </div>
-        <div class="p-2">
-          <h2 class="bg-base d-inline display-3 fw-bold pb-2 px-5" data-aos="fade-up" data-aos-delay="300">Unseen</h2>
+        <div class="">
+          <h2 class="bg-base d-inline-flex display-3 fw-bold px-4 pb-2" data-aos="fade-up" data-aos-delay="300">Unseen</h2>
         </div>
-        <p class="mt-5 fs-7 wp-size position-relative start-50 translate-middle" data-aos="fade-up" data-aos-delay="600">
+        <p class="wp-size fs-7" data-aos="fade-up" data-aos-delay="600">
           We are a team of passionate exparts in thermal imaging technology,
           dedicated to providing innovative and reliable solutions for a wide
           range of industries. With years of experience in the field, we have
@@ -145,18 +148,18 @@
     </section>
     <!--//SECTION-1-->
 <!--SECTION-2-->
-    <div class="container">
-      <div class="row py-4">
+    <div class="container" style="margin-top: 300px;">
+      <div class="row">
       <h5 class="text-black display-6">The Labadi Thermal Range Will Ensure No Hot Or Wet Spots Are Left Behind.</h5>
     <p>Our thermal imaging equipment can be used for a variety of applications such as monitoring
       machinery and equipment in industrial settings, diagnostics in automotive industry, medical imaging, security surveillance, and environmental monitoring.</p>
     </div>
     <div class="row py-4">
       <div class="col-lg-6">
-        <img src="../images/bg_15.jpeg" width="600" class="img-fluid" alt="">
+        <img src="../images/bg_15.webp" width="600" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-6 pt-3 px-5">
-        <div class="pb-3">
+      <div class="col-lg-6 px-5">
+        <div class="py-3">
         <h4 class="text-black fw-bold display-5 d-inline border-color-brand">INDUSTRIAL</h4>
         </div>
     <p class="lh-sm fw-light fs-6">Thermal imaging technology has revolutionised the
@@ -169,9 +172,12 @@
       increasing efficiency.</p>
       </div>
     </div>
-    <div class="row py-4">
-      <div class="col-lg-6 pt-3">
-        <div class="container px-5">
+    <div class="row py-4 d-flex flex-row-reverse">
+      <div class="col-lg-6 px-5 pt-3">
+        <img src="../images/bg_20.webp" width="500" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6">
+        <div class="container px-5 py-3">
           <div class="row">
           <p class="d-inline border-color-brand"></p>
           </div>
@@ -189,33 +195,30 @@
       timely repairs and mitigating the risk of equipment damage and
       injury.</p>
       </div>
-      <div class="col-lg-6 px-5">
-        <img src="../images/bg_20.jpeg" width="500" class="img-fluid" alt="">
-      </div>
     </div>
   </div>
 <!--//SECTION-2-->
 <!--SECTION-3-->
-<div class="container">
+<div class="container-fluid">
   <div class="row py-4">
-    <div class="pb-3">
+    <div class="px-5 pb-3">
       <p class="display-6 d-inline border-color-brand">THE TOOLS YOU NEED</p>
       </div>
-    <div class="owl-carousel owl-theme text-center" data-aos="fade-up" data-aos-delay="200">
-      <div class="item"><a href=""><img src="../images/product_5.png" class="img-fluid" alt="" height="300px"><p class="text-black">Labadi &#174 L200 Camera</p><a
-        href="/"
+    <div class="owl-carousel owl-theme text-center px-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="item"><a href="../pages/labadi-L200.html"><img src="../images/product_5.webp" class="img-fluid" alt="" height="300px"><p class="text-black">Labadi &#174 L200 Camera</p><a
+        href="../pages/labadi-L200.html"
         type="button"
         class="shadow-1 text-black bg-brand rounded-3 p-1 px-3 fst-normal"
         >Learn More</a
       ></a></div>
-      <div class="item"><a href="../pages/labadi-L256A.html"><img src="../images/product_7.png" class="img-fluid" alt="" height="300px"><p class="text-black">Labadi &#174 L256A Camera</p><a
-        href="/"
+      <div class="item"><a href="../pages/labadi-L256A.html"><img src="../images/product_7.webp" class="img-fluid" alt="" height="300px"><p class="text-black">Labadi &#174 L256A Camera</p><a
+        href="../pages/labadi-L256A.html"
         type="button"
         class="shadow-1 text-black bg-brand rounded-3 p-1 px-3 fst-normal"
         >Learn More</a
       ></a></div>
-      <div class="item"><a href=""><img src="../images/product_4.png" class="img-fluid" alt="" height="300px"><p class="text-black">Labadi &#174 L256B Camera</p><a
-        href="/"
+      <div class="item"><a href="../pages/labadi-L256B.html"><img src="../images/product_4.webp" class="img-fluid" alt="" height="300px"><p class="text-black">Labadi &#174 L256B Camera</p><a
+        href="../pages/labadi-L256B.html"
         type="button"
         class="shadow-1 text-black bg-brand rounded-3 p-1 px-3 fst-normal"
         >Learn More</a
@@ -231,9 +234,12 @@
 </div>
 <!--SECTION-4-->
   <div class="container">
-    <div class="row py-4">
-      <div class="col-lg-6 pt-3 px-5">
-        <div class="pb-3">
+    <div class="row py-4 d-flex flex-row-reverse">
+      <div class="col-lg-6">
+        <img src="../images/bg_14.webp" width="600" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6 px-5">
+        <div class="py-3">
         <h4 class="text-black fw-bold display-5 d-inline border-color-brand">MEDICAL</h4>
         </div>
     <p class="lh-sm fw-light fs-6">Thermal imaging is a valuable technology in the
@@ -244,17 +250,15 @@
       inflammation, infection, and blood flow disorders.
       </p>
       </div>
-      <div class="col-lg-6">
-        <img src="../images/bg_14.jpeg" width="600" class="img-fluid" alt="">
-      </div>
+      
     </div>
     <div class="row py-4">
       
-      <div class="col-lg-6 px-5">
-        <img src="../images/bg_18.jpeg" width="500" class="img-fluid" alt="">
+      <div class="col-lg-6 px-5 pt-3">
+        <img src="../images/bg_18.webp" width="500" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-6 pt-3">
-        <div class="container px-5">
+      <div class="col-lg-6">
+        <div class="container px-5 py-3">
           <div class="row">
           <p class="d-inline border-color-brand"></p>
           </div>
@@ -285,10 +289,10 @@
   <div class="container">
     <div class="row py-4">
       <div class="col-lg-6">
-        <img src="../images/bg_7.jpeg" width="600" class="img-fluid" alt="">
+        <img src="../images/bg_7.webp" width="600" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-6 pt-3 px-5">
-        <div class="pb-3">
+      <div class="col-lg-6 px-5">
+        <div class="py-3">
         <h4 class="text-black fw-bold display-5 d-inline border-color-brand">AUTOMOTIVE</h4>
         </div>
     <p class="lh-sm fw-light fs-6">Thermal imaging technology is increasingly being
@@ -301,9 +305,12 @@
       issues in vehicles.</p>
       </div>
     </div>
-    <div class="row py-4">
-      <div class="col-lg-6 pt-3">
-        <div class="container px-5">
+    <div class="row py-4 d-flex flex-row-reverse">
+      <div class="col-lg-6 px-5 pt-3">
+        <img src="../images/bg_17.webp" width="500" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6">
+        <div class="container px-5 py-3">
           <div class="row">
           <p class="d-inline border-color-brand"></p>
           </div>
@@ -333,9 +340,7 @@
         style="width: 8rem;">Contact Us</a
       >
   </div>
-      <div class="col-lg-6 px-5">
-        <img src="../images/bg_17.jpeg" width="500" class="img-fluid" alt="">
-      </div>
+      
     </div>
   </div>
 <!--//SECTION-5-->
@@ -345,13 +350,13 @@
   </div>
   </div>
 <!--SECTION-6-->
-<div class="container">
+<div class="container pb-5">
   <div class="row py-4">
     <div class="col-lg-6">
-      <img src="../images/bg_8.jpeg" width="600" class="img-fluid" alt="">
+      <img src="../images/bg_8.webp" width="600" class="img-fluid" alt="">
     </div>
-    <div class="col-lg-6 pt-3 px-5">
-      <div class="pb-3">
+    <div class="col-lg-6 px-5">
+      <div class="py-3">
       <h4 class="text-black fw-bold display-5 d-inline border-color-brand">SAFETY</h4>
     </div>
   <p class="lh-sm fw-light fs-6">Handheld thermal imaging devices can be used in a
@@ -363,9 +368,12 @@
     accidents, and protect people and property.</p>
     </div>
   </div>
-  <div class="row py-4">
-    <div class="col-lg-6 pt-3">
-      <div class="container px-5">
+  <div class="row py-4 d-flex flex-row-reverse">
+    <div class="col-lg-6 px-5 pt-3">
+      <img src="../images/bg_10.webp" width="500" class="img-fluid" alt="">
+    </div>
+    <div class="col-lg-6">
+      <div class="container px-5 py-3">
         <div class="row">
         <p class="d-inline border-color-brand"></p>
         </div>
@@ -383,9 +391,6 @@
     identify hot spots in engines and exhaust systems in vehicles,
     helping to prevent accidents and equipment failures.</p>
     </div>
-    <div class="col-lg-6 px-5">
-      <img src="../images/bg_10.jpeg" width="500" class="img-fluid" alt="">
-    </div>
   </div>
 </div>
 <!--//SECTION-6-->
@@ -394,25 +399,29 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <ul class="align-self-center lh-lg text-center">
-          <img src="../images/logo_2.png" width="200" class="pt-5" alt="">
-    <div class="d-flex column-gap-3 p-3">
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-facebook fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-twitter fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-tiktok fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-instagram fs-4"></i
-      ></a>
-      <a target="_blank" href="#" class="text-brand"
-        ><i class="fa-brands fa-youtube fs-4"></i
-      ></a>
-    </div>
+        <ul class="row align-self-center lh-lg text-center">
+          <div>
+          <img src="../images/logo_2.webp" width="200" class="pt-5 img-fluid" alt="">
+        </div>
+        <div>
+          <div class="pt-3">
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-facebook fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-twitter fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-tiktok fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-instagram fs-4"></i
+            ></a>
+            <a target="_blank" href="#" class="text-brand p-1"
+              ><i class="fa-brands fa-youtube fs-4"></i
+            ></a>
+          </div>
+        </div>
         </ul>
       </div>
       <div class="col-6 col-lg-3">
@@ -463,7 +472,7 @@
     <script src="../assets/js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../assets/js/main.js"></script>c
+    <script src="../assets/js/main.js"></script>
     <script>
       AOS.init();
     </script>
